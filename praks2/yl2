@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# muljed antud aines
+#
+echo "Rando vöörmann" # väljastab mu  Ees ja Perenime
+echo "ISP217" # väljastab millises õppegrupis ma õpin
+echo "Väga huvitav" # väljastab kuidas antud aine tundub
+echo "Päris hea" #väljastab mulje ja edasijõudmise
+#
+#skripti lõpp
