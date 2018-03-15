@@ -3,7 +3,8 @@
 # tervitusskript
 #
 echo -n "Tere, " # väljasta ilma reavahetuseta Tere,
-echo -n "User" # väljasta ilma reavahetuseta User
+echo -n `whoami | cut -c1 | tr [:lower:] [:upper:]` # lõika esimene täht ja muuda suureks
+echo -n `whoami | cut -c2-`
 echo "!" # väljasta ! ja tee reavahetus
 #
 # skripti lõpp
