@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#kasutajate nimekiri kujul Perenimi, Eesnimi
+#
+who | awk '{print $1 "." $2}' | cut -f1 -d" " | cut -f2 -d"." > perenimi  #
+who | awk '{print $1 "." $2}' | cut -f1 -d" " | cut -f1 -d"." > eesnimi #
+paste -d"." perenimi eesnimi > nimed #
+cat nimed | sort | uniq | grep "perenimi.*" #
+#
+#skripti lõpp
