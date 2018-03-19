@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+#
+echo Today is `date '+%d.%m.%Y'`
+echo Time is `date '+%H:%M:%S'`
+cal
+#
+#
+#
