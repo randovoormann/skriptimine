@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+#
+find /var/* -name '*.log' 2>> /dev/null -exec wc -l {} \; | sort -rn
+#
+#
+#
