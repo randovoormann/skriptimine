@@ -1,0 +1,24 @@
+#
+#!/bin/bash
+#
+#reisilt tagasi tuleku päeva arvutamine
+#
+echo "Päeva nimede asemel on numbrid"
+echo "Näiteks pühapäev on 0, esmaspäev 1 ja laupäev 6"
+
+
+echo -n "Sisesta millal ära sõidad: "
+read lahkumine
+echo -n "Sisesta reisi pikkus: "
+read kestvus
+
+ylep2evad=$(($kestvus % 7))
+tagasi=$(($lahkumine + $ylep2evad))
+
+echo "Tagasi tulete $tagasi päeval"
+
+#
+#
+#lõpp
+#
+
