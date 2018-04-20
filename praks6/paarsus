@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+#paaris või paaritu
+#
+#
+#
+echo "Kohe arvutab"
+echo '$1 = '$1
+
+
+j22k=$(($1 % 2))
+if [ $j22k -eq 1 ]
+	then echo "Antud arv on paaritu"
+	else echo "Antud arv on paaris"
+fi
+
+
+#
+#
+#
+#
