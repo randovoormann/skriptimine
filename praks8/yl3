@@ -1,0 +1,28 @@
+#!/bin/bash
+#
+#kuu väljastamise skript
+#
+echo -n "Sisesta kuu number: "
+read number
+
+case $number in
+	"1") echo "See kuu on jaanuar ning on talv";;
+	"2") echo "See kuu on veebruar ning on talv";;
+	"3") echo "See kuu on märts ning on kevad";;
+	"4") echo "See kuu on aprill ning on kevad";;
+	"5") echo "See kuu on mai ning on kevad";;
+	"6") echo "See kuu on juuni ning on suvi";;
+	"7") echo "See kuu on juuli ning on suvi";;
+	"8") echo "See kuu on august ning on suvi";;
+	"9") echo "See kuu on september ning on sügis";;
+	"10") echo "See kuu on oktoober ning on sügis";;
+	"11") echo "See kuu on november ning on sügis";;
+	"12") echo "See kuu on detsember ning on talv";;
+	*) echo "Vale kuu number";;
+
+esac
+
+#
+#
+#
+
