@@ -1,0 +1,28 @@
+#!/bin/bash
+#
+#tärnide väljastamine
+echo -n "Sisesta ridade arv: "
+read r
+echo -n "Sisesta tärnide arv reas: "
+read t
+for (( i = 1; i <= $r; i++ ))
+	do
+if [ "$i" == 1 ] || [ "$i" == $r ]
+	then
+	for (( j = 1; j <= $t; j++ ))
+		do
+			echo -n "*"
+		done
+	else
+	echo -n "*"
+	for (( a = 2; a < $t; a++ ))
+		do
+			echo -n " "
+		done
+	echo -n "*"
+fi
+echo ""
+done
+#
+#
+#
